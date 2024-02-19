@@ -15,6 +15,8 @@ from collections import defaultdict
 
 
 class Solution(object):
+
+    # Variant 1:
     # Initialize a defaultdict(). Then we iterate through that dictionary and add each to each key (distinct elements
     # in nums) the amount of occurrences. Then we have to sort that dictionary using the 3 parameters in the sorted().
     # We need to make sure that we sort it from the highest value to the lowest (We want the top K elements). We can
@@ -46,8 +48,42 @@ class Solution(object):
 
         return top_k_elements
 
+    # Variant 2: with a time complexity of O(n):
+    def topKFrequent2(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        count = {}
+        # This array only needs to be as big as the array nums
+        freq = [[] for i in range(len(nums) + 1)]
 
+        for num in nums:
+            # Count the number of occurrences of each value in nums, put it in a hashmap value : occurrences
+            count[num] = 1 + count.get(num, 0)
+        for num, c in count.items():
+            # For every num in our hashmap, we map that num to its respective index 'c' that represents the number
+            # occurrences
+            freq[c].append(num)
+
+        # We start building our result
+        result = []
+        # We iterate from the back of freq, because we want the values that occurred the most
+        for i in range(len(freq) - 1, 0, -1):
+            for n in freq[i]:
+                result.append(n)
+                # We can stop when result == k, because we don't need more
+                if len(result) == k:
+                    return result
+
+
+print('\nVariant 1')
 print(Solution().topKFrequent([-1, -1], 1))
 print(Solution().topKFrequent([5, 4, 5, 1, 1, 1, 2, 3, 2, 1, 5], 2))
 print(Solution().topKFrequent([1, 1, 1, 2, 2, 3], 2))
 
+print('\nVariant 2')
+print(Solution().topKFrequent2([-1, -1], 1))
+print(Solution().topKFrequent2([5, 4, 5, 1, 1, 1, 2, 3, 2, 1, 5], 2))
+print(Solution().topKFrequent2([1, 1, 1, 2, 2, 3], 2))
