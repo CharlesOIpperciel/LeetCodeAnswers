@@ -6,6 +6,7 @@ This repository contains my solutions and analyses to various LeetCode problems.
 2. **217 - Contains Duplicate.py**: This problem involves determining if a given array contains any duplicates.
 3. **242 - Valid Anagram.py**: This problem checks whether two given strings are anagrams of each other.
 4. **49 - Group Anagrams.py**: This problem involves grouping anagrams together from a given list of strings.
+5. **347. Top K Frequent Elements.py**: This problem check the Top K elements in an array and return thems.
 
 
 ## Disclaimer
