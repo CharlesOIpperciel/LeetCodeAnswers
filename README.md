@@ -9,6 +9,7 @@ This repository contains my solutions and analyses to various LeetCode problems.
 5. **347. Top K Frequent Elements.py**: This problem check the Top K elements in an array and return thems.
 6. **238. Product of Array Except Self.py**: This problem involves generating an array where each element is the product of all elements in the input array except the corresponding element, achieving linear time complexity without using division.
 7. **36. Valid Sudoku**: This problem checks if a sudoku is valid (has valid inputs).
+8. **392. Is Subsequence**: This problem checks if a sequence of english lowercase characters 's' is a subsequence of another sequence 't'
 
 
 ## Disclaimer
