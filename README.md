@@ -10,6 +10,7 @@ This repository contains my solutions and analyses to various LeetCode problems.
 6. **238. Product of Array Except Self.py**: This problem involves generating an array where each element is the product of all elements in the input array except the corresponding element, achieving linear time complexity without using division.
 7. **36. Valid Sudoku**: This problem checks if a sudoku is valid (has valid inputs).
 8. **392. Is Subsequence**: This problem checks if a sequence of english lowercase characters 's' is a subsequence of another sequence 't'
+9.  **121. Best Time to Buy and Sell Stock**: Given an array of stock prices where each element represents the price on a particular day, find the maximum profit you can achieve by buying and then selling the stock on a later day. You can only make one buy and one sell.
 
 
 ## Disclaimer
