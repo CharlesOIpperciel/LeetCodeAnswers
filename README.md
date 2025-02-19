@@ -15,6 +15,7 @@ This repository contains my solutions and analyses for various **LeetCode** prob
 9. **121. Best Time to Buy and Sell Stock** – Given an array of stock prices, determine the maximum profit achievable with a single buy and sell.  
 10. **21. Merge Two Sorted Lists** – Merge two sorted linked lists into one.
 11. **66. Plus One** - Increment the large integer by one and return the resulting array of digits.
+12. **1929. Concatenation of Array** - ans is the concatenation of two nums arrays. Return the array ans.
 
 ## Disclaimer  
 
