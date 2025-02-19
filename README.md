@@ -13,7 +13,8 @@ This repository contains my solutions and analyses for various **LeetCode** prob
 7. **36. Valid Sudoku** – Validate whether a given Sudoku board is correctly formatted.  
 8. **392. Is Subsequence** – Check if string **s** is a subsequence of string **t**.  
 9. **121. Best Time to Buy and Sell Stock** – Given an array of stock prices, determine the maximum profit achievable with a single buy and sell.  
-10. **21. Merge Two Sorted Lists** – Merge two sorted linked lists into one.  
+10. **21. Merge Two Sorted Lists** – Merge two sorted linked lists into one.
+11. **66. Plus One** - Increment the large integer by one and return the resulting array of digits.
 
 ## Disclaimer  
 
