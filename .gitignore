@@ -14,7 +14,7 @@ node_modules/
 # Ignore build files
 dist/
 build/
-
+vscode/
 # Ignore system files
 .DS_Store
 Thumbs.db
