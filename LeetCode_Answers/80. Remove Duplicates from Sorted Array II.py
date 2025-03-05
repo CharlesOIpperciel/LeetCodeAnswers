@@ -56,14 +56,22 @@ class Solution(object):
         count = 0 
 
         for i in range(len(nums)):  
+            # if we're at the first number in nums OR if the current number is 
+            # different from the last (so that means we changed number)
             if i == 0 or nums[i] != nums[i - 1]:  
                 count = 1  
             else:
+                # we already saw the number so we increment the count
                 count += 1 
-
+            # we dont want that num anymore as it exceeds 2, so we replace it
+            # nums[j] = nums[i] ensures that the current element nums[i] is placed 
+            # in the correct position in the array if it has appeared at most twice, 
+            # maintaining the required condition.
             if count <= 2:  
                 nums[j] = nums[i]  
                 j += 1  
+        
+        print(nums)
 
         return j  
 
